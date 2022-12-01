@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between">
+<div>
+<img [src]="lcars.img" height="150" width="220"><br>
+{{lcars.nom|uppercase}} {{lcars.date|date:'dd/MM/yyyy'}}
+</div>
+<div>
+<span class="badge bg-dark">{{lcars.prix|number:'2.3'}}</span>
+</div>
+</div>

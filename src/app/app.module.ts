@@ -8,6 +8,7 @@ import { ShopUsedComponent } from './lesComposantes/shop-used/shop-used.componen
 import { SellCarComponent } from './lesComposantes/sell-car/sell-car.component';
 import { LoginComponent } from './lesComposantes/login/login.component';
 import { HomeComponent } from './lesComposantes/home/home.component';
+import { CarsComponent } from './lesComposantes/cars/cars.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,10 @@ import { HomeComponent } from './lesComposantes/home/home.component';
     ShopUsedComponent,
     SellCarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CarsComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
