@@ -1,0 +1,16 @@
+{
+  "loginc": [
+    {
+      "id": 1,
+      "email": "json-server",
+      "nom": "typicode",
+      "mdp": "dmmdmd"
+    },
+    {
+      "mail": "achref.fatoum@gmail.com",
+      "nom": "ds",
+      "mdp": "sdfq",
+      "id": 2
+    }
+  ]
+}

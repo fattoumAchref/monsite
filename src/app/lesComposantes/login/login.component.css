@@ -1,0 +1,10 @@
+#bg{
+    background-image: url("../../../assets/images/fond.png");
+    height: 800px;
+}
+label{
+    color: white;
+
+}
+input.ng-valid{ border-left: 3px solid green;}
+input.ng-invalid{ border-left: 3px solid red;}
