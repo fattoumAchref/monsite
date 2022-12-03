@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ListCarsService } from 'src/app/service/list-cars.service';
+import { Usedcar } from 'src/app/usedcar';
 
 @Component({
   selector: 'app-shop-used',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopUsedComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private lcs:ListCarsService) { }
+  listCarsU!:Usedcar[]
   ngOnInit(): void {
+    this.listCarsU = this.lcs.getCarsU()
   }
 
 }

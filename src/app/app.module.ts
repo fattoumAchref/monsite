@@ -10,6 +10,10 @@ import { LoginComponent } from './lesComposantes/login/login.component';
 import { HomeComponent } from './lesComposantes/home/home.component';
 import { CarsComponent } from './lesComposantes/cars/cars.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MoreinfoComponent } from './lesComposantes/moreinfo/moreinfo.component';
+import { TransformPipe } from './transform.pipe';
+import { CarsUComponent } from './lesComposantes/cars-u/cars-u.component';
+import { MoreinfoUComponent } from './lesComposantes/moreinfo-u/moreinfo-u.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     CarsComponent,
+    MoreinfoComponent,
+    TransformPipe,
+    CarsUComponent,
+    MoreinfoUComponent,
     
     
   ],

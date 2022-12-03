@@ -1,0 +1,13 @@
+<div class="container mt-3">
+    <div class="card text-center">
+        <div class="card-header"><span style="font-weight: bold;">{{nomCarU|uppercase|transform}}</span></div>
+        <div class="card-body">
+            <span class="badge bg-danger">{{cvCarU}} Horsepower</span><br>
+            <span class="badge bg-warning">{{doorsCarU}} Doors</span><br>
+            <span class="badge bg-primary">{{kmCarU}} Km</span><br>
+            <span class="badge bg-success">{{prixCarU|currency}}</span><br>
+            <input type="checkbox" [checked]="optionCarU"> All option
+        </div>
+        <div class="card-footer"><button class="btn btn-dark" (click)="onBackU()">Back</button></div>
+    </div>
+    </div>

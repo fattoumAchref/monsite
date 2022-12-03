@@ -7,7 +7,6 @@
 <span class="badge bg-dark">{{lcars.prix|currency}}</span><br>
 </div>
 <div>
-    <button class="btn btn-secondary">More info</button>
-
+    <a class="btn btn-secondary" [routerLink]="['/ShopNew',lcars.id,lcars.nom,lcars.prix,lcars.cv,lcars.porte,lcars.toutoption]">More info</a>
 </div>
 </div>

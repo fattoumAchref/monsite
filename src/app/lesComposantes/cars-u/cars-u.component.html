@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-between">
+    <div>
+    <img [src]="lcarsU.img" height="150" width="220"><br>
+    {{lcarsU.nom|uppercase}} {{lcarsU.date|date:'dd/MM/yyyy'}}
+    </div>
+    <div>
+    <span class="badge bg-dark">{{lcarsU.prix|currency}}</span><br>
+    </div>
+    <div>
+        <a class="btn btn-secondary" [routerLink]="['/ShopUsed',lcarsU.id,lcarsU.nom,lcarsU.prix,lcarsU.cv,lcarsU.porte,lcarsU.km,lcarsU.toutoption]">More info</a>
+    </div>
+    </div>

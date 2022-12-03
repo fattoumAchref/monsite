@@ -1,5 +1,4 @@
-export class Newcar {
-
+export class Usedcar {
     constructor(public id:number,
         public nom:string,
         public img:string,
@@ -7,6 +6,6 @@ export class Newcar {
         public prix:number,
         public cv:number,
         public porte:number,
-        public toutoption:boolean
-        ){}
+        public km:number,
+        public toutoption:boolean){}
 }
