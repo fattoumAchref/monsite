@@ -1,1 +1,39 @@
-<p>sell-car works!</p>
+<div class="container" id="bl">
+    <form [formGroup]="sellcarForm">
+        <div class="mb-3 mt-3">
+          <label for="marque" class="form-label">Mark:</label>
+          <input type="text" class="form-control" formControlName="nom" placeholder="Enter mark" name="marque">
+          <div class="alert alert-danger" *ngIf="nom && nom.invalid && nom.dirty">Mark required !</div>
+
+        </div>
+        <div class="mb-3">
+          <label for="horsep" class="form-label">Horsepower:</label>
+          <input type="number" class="form-control" formControlName="cv" name="horsep">
+          <div class="alert alert-danger" *ngIf="cv && cv.invalid &&cv.dirty">Horsepower required !</div>
+
+        </div>
+        <div class="mb-3">
+            <label for="km" class="form-label">Km:</label>
+            <input type="number" class="form-control" formControlName="km" name="k">      
+            <div class="alert alert-danger" *ngIf="km && km.invalid && km.dirty">Km required !</div>
+
+        </div>
+          <div class="mb-3 mt-3">
+            <label for="modele" class="form-label">Price :</label>
+            <input type="number" class="form-control" formControlName="prix" placeholder="Enter price" name="model">
+            <div class="alert alert-danger" *ngIf="prix && prix.invalid && prix.dirty">Price required !</div>
+
+        </div>
+          <div class="mb-3">
+            <label for="horsep" class="form-label">Image:</label>
+            <input type="file" class="form-control" formControlName="file" name="horsep">      
+          </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" formControlName="notRobot" name="robot"> Im not Robot
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="sellcarForm.invalid" (click)="onAjoutU()">Submit</button>
+        <button type="reset" class="btn btn-danger" >Clear</button>
+      </form>
+    </div>

@@ -1,5 +1,5 @@
 {
-  "loginc": [
+  "Loginc": [
     {
       "id": 1,
       "email": "json-server",
@@ -11,6 +11,54 @@
       "nom": "ds",
       "mdp": "sdfq",
       "id": 2
+    },
+    {
+      "mail": "qsdfqsf",
+      "nom": "Achref",
+      "mdp": "dqsfdsfqs",
+      "notRobot": true,
+      "id": 3
+    },
+    {
+      "nom": "golf",
+      "cv": 8,
+      "km": 6,
+      "prix": 35000,
+      "id": 4
+    },
+    {
+      "nom": "golf",
+      "cv": 8,
+      "km": 6,
+      "prix": 35000,
+      "id": 5
+    },
+    {
+      "nom": "bvcx",
+      "cv": 88,
+      "km": 2700000,
+      "prix": 800000,
+      "file": "C:\\fakepath\\IMG-20210721-WA0001-removebg-preview (1).png",
+      "id": 6
+    },
+    {
+      "nom": "dqsf",
+      "cv": 87,
+      "km": 66,
+      "prix": 2700,
+      "file": "C:\\fakepath\\282220037_688062372270077_3856796891182234947_n-removebg-preview (2).png",
+      "notRobot": true,
+      "id": 7
+    },
+    {
+      "nom": "a",
+      "cv": 20,
+      "km": 566,
+      "prix": 89,
+      "file": "C:\\fakepath\\IMG-20210721-WA0001-removebg-preview (1).png",
+      "notRobot": true,
+      "id": 8
     }
-  ]
+  ],
+  "Usedcar": []
 }

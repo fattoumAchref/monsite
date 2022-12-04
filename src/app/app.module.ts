@@ -14,6 +14,7 @@ import { MoreinfoComponent } from './lesComposantes/moreinfo/moreinfo.component'
 import { TransformPipe } from './transform.pipe';
 import { CarsUComponent } from './lesComposantes/cars-u/cars-u.component';
 import { MoreinfoUComponent } from './lesComposantes/moreinfo-u/moreinfo-u.component';
+import { ErrorComponent } from './lesComposantes/error/error.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MoreinfoUComponent } from './lesComposantes/moreinfo-u/moreinfo-u.compo
     TransformPipe,
     CarsUComponent,
     MoreinfoUComponent,
+    ErrorComponent,
     
     
   ],

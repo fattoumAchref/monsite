@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Loginc } from 'src/app/loginc';
 import { LoginsService } from 'src/app/service/logins.service';
 
@@ -11,9 +12,12 @@ import { LoginsService } from 'src/app/service/logins.service';
 export class LoginComponent implements OnInit {
   loginForm!:FormGroup
   listLogin!:Loginc[]
-  constructor(private fb:FormBuilder,private ls:LoginsService) { }
+  constructor(private fb:FormBuilder,private ls:LoginsService,private route:Router) { }
+  onInsc(){
+    this.route.navigate(['/Home'])
+  }
   onAjout(){
-    this.ls.addProduit(this.loginForm.value).subscribe(data => this.listLogin.push(data))
+    this.ls.addCars(this.loginForm.value).subscribe(data => console.log(data))
   }
   onClear(){
     this.loginForm.reset()
@@ -38,7 +42,7 @@ export class LoginComponent implements OnInit {
       mdp:["",[Validators.required,Validators.minLength(7)]],
       notRobot:["",Validators.required]
     })
-    this.ls.getCars().subscribe(data => this.listLogin = data)
+    
   }
 
 }

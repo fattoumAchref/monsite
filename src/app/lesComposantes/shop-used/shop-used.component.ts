@@ -8,11 +8,13 @@ import { Usedcar } from 'src/app/usedcar';
   styleUrls: ['./shop-used.component.css']
 })
 export class ShopUsedComponent implements OnInit {
-
+  
   constructor(private lcs:ListCarsService) { }
-  listCarsU!:Usedcar[]
+  listCarsU:Usedcar[]=[]
+ 
   ngOnInit(): void {
     this.listCarsU = this.lcs.getCarsU()
   }
+
 
 }

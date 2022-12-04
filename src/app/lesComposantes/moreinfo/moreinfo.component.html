@@ -3,9 +3,9 @@
     <div class="card text-center">
         <div class="card-header"><span style="font-weight: bold;">{{nomCar|uppercase|transform}}</span></div>
         <div class="card-body">
-            <span class="badge bg-danger">{{cvCar}} Horsepower</span><br>
-            <span class="badge bg-warning">{{doorsCar}} Doors</span><br>
-            <span class="badge bg-success">{{prixCar|currency}}</span><br>
+            <span class="badge bg-secondary">{{cvCar}} Horsepower</span><br>
+            <span class="badge bg-secondary">{{doorsCar}} Doors</span><br>
+            <span class="badge bg-secondary">{{prixCar|currency}}</span><br>
             <input type="checkbox" [checked]="optionCar"> All option
         </div>
         <div class="card-footer"><button class="btn btn-dark" (click)="onBack()">Back</button></div>
