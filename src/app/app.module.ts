@@ -16,6 +16,7 @@ import { CarsUComponent } from './lesComposantes/cars-u/cars-u.component';
 import { MoreinfoUComponent } from './lesComposantes/moreinfo-u/moreinfo-u.component';
 import { ErrorComponent } from './lesComposantes/error/error.component';
 import { CommentsComponent } from './lesComposantes/comments/comments.component';
+import { NavComponent } from './lesComposantes/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CommentsComponent } from './lesComposantes/comments/comments.component'
     MoreinfoUComponent,
     ErrorComponent,
     CommentsComponent,
+    NavComponent,
     
     
   ],

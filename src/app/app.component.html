@@ -1,25 +1,2 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/Home"><i class="fa-solid fa-house"></i></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLinkActive="actif" routerLink="/ShopNew">Shop New</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLinkActive="actif" routerLink="/ShopUsed">Shop Used</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLinkActive="actif" routerLink="/SellCar">Sell your Car</a>
-        </li>
-      </ul>
-      <li class="d-flex">
-        <a class="btn btn-info" type="button" routerLink="/Login"><i class="fa-solid fa-user-plus"></i> Login</a>
-      </li>
-    </div>
-  </div>
-</nav>
+<app-nav></app-nav>
 <router-outlet></router-outlet>
