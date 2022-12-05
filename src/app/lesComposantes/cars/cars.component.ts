@@ -7,9 +7,16 @@ import { Newcar } from 'src/app/newcar';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent implements OnInit {
-
+  show:boolean = false
   constructor() { }
   @Input()lcars!:Newcar
+  afficher(){
+    if(this.show == false){
+      this.show = true
+    }else {
+      this.show = false
+    }
+  }
   ngOnInit(): void {
   }
 

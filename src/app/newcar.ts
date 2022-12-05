@@ -1,3 +1,5 @@
+import { Comments } from "./comments";
+
 export class Newcar {
 
     constructor(public id:number,
@@ -7,6 +9,7 @@ export class Newcar {
         public prix:number,
         public cv:number,
         public porte:number,
-        public toutoption:boolean
+        public toutoption:boolean,
+        public comments:Comments[]
         ){}
 }

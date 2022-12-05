@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginsService } from 'src/app/service/logins.service';
 import { Usedcar } from 'src/app/usedcar';
 
@@ -12,9 +13,12 @@ export class SellCarComponent implements OnInit {
 
   sellcarForm!:FormGroup
   listUsed!:Usedcar[]
-  constructor(private fb:FormBuilder,private s:LoginsService) { }
+  constructor(private fb:FormBuilder,private s:LoginsService,private route:Router) { }
   onAjoutU(){
-    this.s.addCarsU(this.sellcarForm.value).subscribe(data => console.log(data))
+    this.s.addCarsU(this.sellcarForm.value).subscribe(data => this.listUsed.push(data))
+  }
+  toShopUsed(){
+    return this.route.navigate(['/ShopUsed'])
   }
   onClear(){
     return this.sellcarForm.reset()

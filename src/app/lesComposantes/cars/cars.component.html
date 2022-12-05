@@ -5,8 +5,18 @@
 </div>
 <div>
 <span class="badge bg-dark">{{lcars.prix|currency}}</span><br>
+
 </div>
 <div>
-    <a class="btn btn-secondary" [routerLink]="['/ShopNew',lcars.id,lcars.nom,lcars.prix,lcars.cv,lcars.porte,lcars.toutoption]">More info</a>
+    <a class="btn btn-secondary" [routerLink]="['/ShopNew',lcars.id,lcars.nom,lcars.prix,lcars.cv,lcars.porte,lcars.toutoption]"><span class="spinner-grow spinner-grow-sm"></span>More info</a>
+    
+</div>
+<div>
+    <button class="btn btn-link" (click)="afficher()">Show the comments</button>
+<ul *ngIf="show">
+    <li *ngFor="let c of lcars.comments">
+        <app-comments [com]="c"></app-comments>
+    </li>
+</ul>
 </div>
 </div>
